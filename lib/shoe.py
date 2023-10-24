@@ -11,7 +11,7 @@ class Shoe:
 
     @size.setter
     def size(self, new_size):
-        if isinstance(new_size, int):
+        if type(new_size) == int:
             self._size = new_size
         else:
             print("size must be an integer")
